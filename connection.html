@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Form</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        button{
+            margin: 10px;
+        }
+        
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: black;
+    width: 100%;
+}
+
+.navbar li {
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    font-family: "Poppins";
+    padding: 0;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 2vh;
+}
+
+.navbar li a img{
+    width: 100%;
+    height: 3vh;
+    margin-left: -7626%;
+}
+
+.navbar li a:hover {
+    background-color: #333333;
+}
+
+@media (max-width:767px) {
+
+    .navbar{
+
+    }
+
+    .navbar li a{
+
+    }
+    
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+      }
+
+    .navbar li{
+        font-size: x-small;
+    }
+
+    .navbar ul{
+
+    }
+
+    .navbar li a img{
+        width: 100%;
+        height: 3vh;
+        margin-left: -100%;
+    }
+
+    .box.show{
+        width: 100%;
+    }
+
+    .box img{
+        width: 40%;
+    }
+
+    .prod-info{
+
+    }
+
+    .prod-info h2{
+        font-size: inherit;
+    }
+
+    .prod-info p{
+        font-size: small;
+    }
+
+    form{
+                display: flex;
+                flex-direction: column;
+            }
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+           <li><a href="index.html">Home</a></li>
+        </ul> 
+    </div>
+    <h1>Add Product</h1>
+    <form  method="POST" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="description">Description:</label>
+        <textarea id="dis" name="dis"></textarea>
+        <label for="image">Select an image:</label>
+        <input type="file" name="image" id="image" accept="image/*" >
+        <br>
+
+        <button type="submit" formaction="add_product1.php">Table1</button>
+        <button type="submit" formaction="add_product2.php">Table2</button>
+        <button type="submit" formaction="add_product3.php">Table3</button>
+        <button type="submit" formaction="add_product4.php">Table4</button>
+
+        <h2>Delete Record from these table</h2>
+        <button type="submit" formaction="dis_delete.php">Table1</button>
+        <button type="submit" formaction="dis_delete.php">Table2</button>
+        <button type="submit" formaction="dis_delete.php">Table3</button>
+        <button type="submit" formaction="dis_delete.php">Table4</button>
+    </form>
+    <!-- <script src="connection.js"></script> -->
+</body>
+</html>

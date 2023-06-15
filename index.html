@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="index5.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <img style="border-radius: 10% ; width: 30px; height: 30px; margin-right: -10px;" src="img/logo.jpg">
+          <a href="#" class="logo" style="color: rgb(218, 218, 218);
+        text-shadow: -0.3px 0.3px 0 #000, 0.3px 0.3px 0 #000,
+          0.3px -0.3px 0 #000, -0.3px -0.3px 0 #000;">MGR
+            <span style="color: #D18700">POWER</span>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="#" onclick="hideMenu()">Home</a></li>
+          <li><a href="about.html" onclick="hideMenu()">About</a></li>
+          <li><a href="#srv" onclick="hideMenu()">Categories</a></li>
+          <li><a href="login.html" onclick="hideMenu()">Admin</a></li>
+          <li><a href="#cnt" onclick="hideMenu()">Contact</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <section class="banner">
+      <h2>
+        MGR<span style="color: #D18700"> POWER </span>is a
+        <span style="color: #D18700">Bridge</span> <br />
+        that <span style="color: #D18700">Connects</span> you with
+        the <span style="color: #D18700">Digital World</span>.
+      </h2>
+      <section class="vid">
+        <img id="backimg" src="img/back6.jpg">
+        <div class="slider">
+          <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+    
+            <!--slide images start-->
+            <div class="slide first">
+              <img src="img/cir10.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="img/cir11.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="img/cir12.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="img/cir8.jpg" alt="" />
+            </div>
+        
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+         
+          </div>
+          <!--manual navigation start-->
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+       
+        </div>
+      </section>
+    </section>
+    <h2 id="srv">Catagories</h2>
+    <section id="servi">  
+      <div class="container" >
+        <div class="box">
+          <div class="vidbox">
+            <img src="img/cir1.jpg" alt="" />
+          </div>
+          <div class="contentBx">
+            <div class="content">
+              <p class="cap">Caption One</p>
+              <a class="button" href="display_p1.php">Dive In</a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="vidbox">
+            <img src="img/cir3.jpg" alt="" />
+          </div>
+          <div class="contentBx">
+            <div class="content">
+              <p class="cap">Caption Two</p>
+              <a class="button" href="display_p2.php">Dive In</a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="vidbox">
+            <img src="img/cir5.jpg" alt="" />
+          </div>
+          <div class="contentBx">
+            <div class="content">
+              <p class="cap">Caption Two</p>
+              <a class="button" href="display_p3.php">Dive In</a>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="vidbox">
+            <img src="img/back4.jpg" alt="" />
+          </div>
+          <div class="contentBx">
+            <div class="content">
+              <p class="cap">Caption Two</p>
+              <a class="button" href="display_p4.php">Dive In</a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <hr style="margin-top: 100px;">
+    <p id="rch">Reach Us</p>
+    <div class="map" >
+      <iframe class="map-cont" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14738.
+        842145350294!2d72.923825!3d22.5525136!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+        1s0x0%3A0xab364c66fd4834c!2sBirla%20Vishvakarma%20Mahavidyalaya%20(BVM)!
+        5e0!3m2!1sen!2sin!4v1659850678822!5m2!1sen!2sin" 
+        width="55%" height="450vh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="contact">
+      <h2 id="cnt" style="font-size: 36px;
+        font-weight: 500;
+        color: #000; margin-bottom: 0px;">Contact Us</h2>
+    <div class="cont-container">
+        <div class="contextInfo">
+            <div class="cont-box">
+                <div class="icon-f"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="text">
+                    <h3 style="font-weight: 500;
+                    color: #D18700"> Address</h3>
+                    <p style="font-weight: 300;
+                    color: #000;">GF-30 ARISTO, NEAR STONEGATE,</br> OPP. SANGHANI SKYZ, BHAYLI,</br> VADODARA-391410(GUJ.) INDIA</p>
+                </div>
+            </div>
+            <div class="cont-box">
+                <div class="icon-f"><i class="fa-solid fa-phone"></i></div>
+                <div class="text">
+                    <h3 style="font-weight: 500;
+                    color: #D18700;">Phone-No</h3>
+                    <p>+91-8320756125,</br>9725903642</p>
+                </div>
+            </div>
+            <div class="cont-box">
+                <div class="icon-f"><i class="fa-solid fa-envelope"></i></div>
+                <div class="text">
+                    <h3 style="font-weight: 500;
+                    color: #D18700;"> Email</h3>
+                    <p style="font-weight: 300;
+                    color: #000;">mgrpower2020@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="contactForm">
+            <form action="" method="post">
+                <div class="inBox">
+                    <input type="text" name="Name" required="required">
+                    <span style="position: absolute;
+                    left: 0;
+                    padding: 5px 0;
+                    font-size: 16px;
+                    margin: 10px 0;
+                    pointer-events: none;
+                    transition: 0.5s;
+                    color: #666;">Full Name</span>
+                </div>
+                <div class="inBox">
+                  <input type="text" name="Phone_no" required="required">
+                  <span style="position: absolute;
+                  left: 0;
+                  padding: 5px 0;
+                  font-size: 16px;
+                  margin: 10px 0;
+                  pointer-events: none;
+                  transition: 0.5s;
+                  color: #666;">Phone-No</span>
+              </div>
+                <div class="inBox">
+                    <input type="text" name="Email" required="required">
+                    <span style="position: absolute;
+                    left: 0;
+                    padding: 5px 0;
+                    font-size: 16px;
+                    margin: 10px 0;
+                    pointer-events: none;
+                    transition: 0.5s;
+                    color: #666;">Email</span>
+                </div>
+                <div class="inBox">
+                    <input type="text" name="Description" required="required">
+                    <span style="position: absolute;
+                    left: 0;
+                    padding: 5px 0;
+                    font-size: 16px;
+                    margin: 10px 0;
+                    pointer-events: none;
+                    transition: 0.5s;
+                    color: #666;">Type your request...</span>
+                </div>
+                <div class="inBox">
+                    <input style="background-color: #D18700;" type="submit" name="" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+    <footer id="flw">
+      <div class="foot-cont">
+        <div class="row">
+          <div class="foot-col">
+            <h4>Follow us</h4>
+            <div class="social-links">
+              <a class="s-lnk" href="#"><i class="fab fa-instagram"></i></a>
+              <a class="s-lnk" href="#"><i class="fab fa-facebook-f"></i></a>
+              <a class="s-lnk" href="#"><i class="fab fa-twitter"></i></a>
+              <a class="s-lnk" href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      
+      const body = document.querySelector("body");
+const navbar = document.querySelector(".navbar");
+const menuBtn = document.querySelector(".menu-btn");
+const cancelBtn = document.querySelector(".cancel-btn");
+
+// Function to hide the menu
+function hideMenu() {
+  body.classList.remove("disabled");
+  navbar.classList.remove("show");
+  menuBtn.classList.remove("hide");
+}
+
+menuBtn.onclick = () => {
+  navbar.classList.add("show");
+  menuBtn.classList.add("hide");
+  body.classList.add("disabled");
+}
+
+cancelBtn.onclick = () => {
+  hideMenu();
+}
+
+// Add event listener to all <a> tags within the menu
+const menuLinks = document.querySelectorAll(".navbar li a");
+menuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    hideMenu();
+  });
+});
+
+window.onscroll = () => {
+  this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+}
+
+var counter = 1;
+setInterval(function () {
+  document.getElementById("radio" + counter).checked = true;
+  counter++;
+  if (counter > 4) {
+    counter = 1;
+  }
+}, 5000);
+
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+function togglepopup1() {
+  document.getElementById("popup-1").classList.toggle("active");
+}
+    </script>
+  </body>
+</html>
